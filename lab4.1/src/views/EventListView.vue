@@ -52,7 +52,7 @@ const updateRoute = (newSize: number) => {
 }
 const events = ref<Event[] | null>(null)
 const totalEvents = ref(0)
-const hasNexPage = computed(() => {
+const hasNextPage = computed(() => {
   const totalPages = Math.ceil(totalEvents.value / 3)
   return page.value < totalPages
 })

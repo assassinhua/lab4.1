@@ -6,13 +6,9 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { type Student } from '@/types'
+defineProps<{
+  student: Student
+}>()
 
-const props = defineProps({
-  student: {
-    type: Object,
-    required: true,
-  },
-})
 </script>
-
