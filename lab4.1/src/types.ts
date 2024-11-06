@@ -16,6 +16,7 @@ export interface EventState {
   event: Event | null
 }
 export interface Student {
+  id:string
   name: string
   surname: string
   gpa: string

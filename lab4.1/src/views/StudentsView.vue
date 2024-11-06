@@ -8,8 +8,8 @@
 import { ref, onMounted } from 'vue'
 import { getStudents } from '@/services/StudentService'
 import StudentCard from '@/components/StudentCard.vue'
-
-const students = ref([])
+import { type Student } from '@/types';
+const students = ref<Student[]>()
 
 onMounted(() => {
   getStudents()
